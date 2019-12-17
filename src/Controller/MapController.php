@@ -1,15 +1,27 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Vitalii
- * Date: 19.10.2019
- * Time: 20:24
- */
 
 namespace App\Controller;
 
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 
-class MapController
+class MapController extends AbstractController
 {
+    /**
+     *
+     *
+     *
+     *
+     * @return Response
+     * @Route("/")
+     */
+    public function homepage()
+    {
+        $article = 'adfdfoii';
+        return $this->render('map/homepage.html.twig', [
+            'title' => $article,
+        ]);
+    }
 
 }
