@@ -19,4 +19,10 @@ class MapController extends AbstractController
             'title' => $article,
         ]);
     }
+
+    public function home()
+    {
+
+    }
+
 }
