@@ -1,15 +1,20 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Vitalii
- * Date: 19.10.2019
- * Time: 20:24
- */
-
 namespace App\Controller;
 
 
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
 class MapController
 {
+    /**
+     * @return Response
+     * @Route('/')
+     */
+    public function index(): Response
+    {
+        return $this->render('map/homepage.html.twig');
+
+    }
 
 }
