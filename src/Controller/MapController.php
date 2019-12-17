@@ -16,5 +16,9 @@ class MapController
         return $this->render('map/homepage.html.twig');
 
     }
+    public function home()
+    {
+
+    }
 
 }
