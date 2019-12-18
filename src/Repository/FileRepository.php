@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\ExchangeFile;
+use App\Entity\File;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 
 /**
- * @method ExchangeFile|null find($id, $lockMode = null, $lockVersion = null)
- * @method ExchangeFile|null findOneBy(array $criteria, array $orderBy = null)
- * @method ExchangeFile[]    findAll()
- * @method ExchangeFile[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method File|null find($id, $lockMode = null, $lockVersion = null)
+ * @method File|null findOneBy(array $criteria, array $orderBy = null)
+ * @method File[]    findAll()
+ * @method File[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class ExchangeFileRepository extends ServiceEntityRepository
+class FileRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, ExchangeFile::class);
+        parent::__construct($registry, File::class);
     }
 
     // /**
-    //  * @return ExchangeFile[] Returns an array of ExchangeFile objects
+    //  * @return File[] Returns an array of File objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class ExchangeFileRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?ExchangeFile
+    public function findOneBySomeField($value): ?File
     {
         return $this->createQueryBuilder('e')
             ->andWhere('e.exampleField = :val')

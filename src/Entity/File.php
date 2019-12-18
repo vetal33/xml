@@ -5,9 +5,9 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\ExchangeFileRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\FileRepository")
  */
-class ExchangeFile
+class File
 {
     /**
      * @ORM\Id()
